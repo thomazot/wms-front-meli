@@ -54,6 +54,10 @@ The following should be true for this page:
 - You implemented actual authentication
 - Good luck, and have fun! 🎉
 
+<br />
+
+# The Project
+
 ## What is inside?
 
 This project uses lot of stuff as:
