@@ -1,0 +1,11 @@
+import { render } from '@testing-library/react'
+
+import {{pascalCase name}} from '.'
+
+describe('<Main />', () => {
+  it('should render component', () => {
+    const { container } = render(<{{pascalCase name}} />)
+
+    expect(container).toBeInTheDocument()
+  })
+})
