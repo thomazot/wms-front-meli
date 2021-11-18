@@ -7,7 +7,7 @@ export const InputWrapper = styled.div`
   ${({ theme }) => css`
     display: flex;
     align-items: center;
-    border-radius: 0.4rem;
+    border-radius: ${theme.border.radius};
     padding: 0 ${theme.spacings.xsmall};
     border: 0.2rem solid ${theme.colors.primary.lightest};
     &:focus-within {
