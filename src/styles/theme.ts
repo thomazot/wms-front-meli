@@ -3,6 +3,9 @@ export default {
     container: '130rem',
     gutter: '3.2rem'
   },
+  border: {
+    radius: '0.4rem'
+  },
   font: {
     family:
       'Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif',
