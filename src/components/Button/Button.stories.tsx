@@ -13,6 +13,11 @@ export default {
         type: 'select',
         options: ['small', 'medium', 'large']
       }
+    },
+    fullWidth: {
+      control: {
+        type: 'boolean'
+      }
     }
   }
 } as Meta

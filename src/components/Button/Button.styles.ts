@@ -33,6 +33,7 @@ export const Wrapper = styled.button<WrapperProps>`
   ${({ theme, size, fullWidth, disabled }) => css`
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     color: #fff;
     background: ${theme.colors.primary.default};
     padding: ${theme.spacings.xxsmall};
