@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextField /> should renders with error 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 0.4rem;
+  padding: 0 1.6rem;
+  border: 0.2rem solid #C5DCFF;
+}
+
+.c2:focus-within {
+  box-shadow: 0 0 0.5rem #C5DCFF;
+}
+
+.c3 {
+  font-size: 1.6rem;
+  padding: 0.8rem 0;
+  background: transparent;
+  border: 0;
+  outline: none;
+  width: 100%;
+}
+
+.c3:-webkit-autofill {
+  -webkit-filter: none;
+  filter: none;
+}
+
+.c3:-webkit-autofill::first-line {
+  font-size: 1.6rem;
+}
+
+.c3:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.c3:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.c3:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.c3:focus::placeholder {
+  color: transparent;
+}
+
+.c4 {
+  color: #B33616;
+  font-size: 1.2rem;
+  padding: 0.8rem 0;
+}
+
+.c0 .c1 {
+  border-color: #EFB5AC;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1 c2"
+  >
+    <input
+      class="c3"
+      value=""
+    />
+  </div>
+  <div
+    class="c4"
+  >
+    Error message
+  </div>
+</div>
+`
