@@ -30,7 +30,7 @@ describe('<TextField />', () => {
 
   it('should change its value when typing', async () => {
     const onInputChange = jest.fn()
-    render(<TextField onInputChange={onInputChange} />)
+    render(<TextField name="field" onInputChange={onInputChange} />)
 
     const input = screen.getByRole('textbox')
     const text = 'This is my text'
@@ -41,7 +41,8 @@ describe('<TextField />', () => {
       expect(input).toHaveValue(text)
       expect(onInputChange).toHaveBeenCalledTimes(text.length)
     })
-    expect(onInputChange).toHaveBeenCalledWith(text)
+
+    expect(onInputChange).toHaveBeenCalledWith('field', text)
   })
 
   it('should does not changes its value when disabled', async () => {
