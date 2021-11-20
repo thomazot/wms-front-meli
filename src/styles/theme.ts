@@ -1,4 +1,8 @@
 export default {
+  breakpoints: {
+    mobile: '@media (max-width: 61.938rem)',
+    desktop: '@media (min-width: 62rem )'
+  },
   grid: {
     container: '130rem',
     gutter: '3.2rem'
