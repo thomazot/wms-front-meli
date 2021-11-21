@@ -1,3 +1,4 @@
+import { useCallback } from 'react'
 import { useWishlist } from 'hooks/use-wishlist'
 
 import * as S from './WishlistButton.styles'
@@ -10,18 +11,18 @@ export type WishlistButtonProps = {
 
 const WishlistButton = ({ id, hasText = true }: WishlistButtonProps) => {
   const { isInWishlist, addToWishlist, removeFromWishlist } = useWishlist()
+  const isInWish = useCallback(() => isInWishlist(id), [isInWishlist, id])
 
-  const ButtonText = isInWishlist(id)
-    ? 'Remove from Wishlist'
-    : 'Add to Wishlist'
+  const ButtonText = isInWish() ? 'Remove from Wishlist' : 'Add to Wishlist'
+  const ButtonIcon = isInWish() ? <Favorite /> : <FavoriteBorder />
 
   function handleAddRemove() {
-    return isInWishlist(id) ? removeFromWishlist(id) : addToWishlist(id)
+    return isInWish() ? removeFromWishlist(id) : addToWishlist(id)
   }
 
   return (
     <S.Button onClick={handleAddRemove}>
-      {isInWishlist(id) ? <Favorite /> : <FavoriteBorder />}
+      {ButtonIcon}
       {hasText && <span>{ButtonText}</span>}
     </S.Button>
   )

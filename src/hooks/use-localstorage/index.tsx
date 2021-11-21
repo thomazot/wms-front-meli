@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
+import { parseCookies, setCookie } from 'nookies'
 
 function getStorageValue(key: string, defaultValue?: any) {
-  const value = localStorage.getItem(key)
+  const value = parseCookies()[key]
   return value ? JSON.parse(value) : defaultValue
 }
 
@@ -12,7 +13,7 @@ export function useLocalStorage<T>(
   const [value, setValue] = useState(() => getStorageValue(key, defaultValue))
 
   useEffect(() => {
-    localStorage.setItem(key, JSON.stringify(value))
+    setCookie(null, key, JSON.stringify(value), { maxAge: 30 * 24 * 60 * 60 })
   }, [key, value])
 
   return [value, setValue]

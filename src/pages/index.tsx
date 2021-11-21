@@ -1,3 +1,5 @@
-export default function Home() {
-  return <div>MELI</div>
+import Home from 'templates/Home'
+
+export default function Index() {
+  return <Home />
 }
