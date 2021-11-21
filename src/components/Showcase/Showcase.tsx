@@ -9,7 +9,7 @@ export type ShowcaseProps = {
 
 const Showcase = ({ title, items }: ShowcaseProps) => (
   <S.Wrapper>
-    <Heading size="medium">{title}</Heading>
+    {!!title && <Heading>{title}</Heading>}
     <S.List>
       {items.map((item) => (
         <Card key={item.id} {...item} />
