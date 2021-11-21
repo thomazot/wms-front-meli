@@ -33,6 +33,13 @@ export default {
       secundary: '#343677',
       tertiary: '#ffffff'
     },
+    grey: {
+      default: '#5c5c5c',
+      darkest: '#171717',
+      active: '#454545',
+      action: '#2e2e2e',
+      lightest: '#e7e7e7'
+    },
     primary: {
       default: '#3483FA',
       darkest: '#245399',
