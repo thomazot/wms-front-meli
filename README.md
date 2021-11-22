@@ -72,6 +72,9 @@ This project uses lot of stuff as:
 - [Prettier](https://prettier.io/)
 - [Husky](https://github.com/typicode/husky)
 - [PlopJS](https://plopjs.com/)
+- [styled-icons](https://styled-icons.dev/)
+- [axios](https://axios-http.com/)
+- [faker.js](https://github.com/Marak/Faker.js#readme)
 
 ## Getting Started
 
