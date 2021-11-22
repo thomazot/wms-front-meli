@@ -5,7 +5,7 @@ module.exports = {
   collectCoverageFrom: [
     'src/**/*.ts(x)?',
     '!src/**/*.stories.tsx',
-    '!src/pages/**/*.tsx',
+    '!src/pages/**/*.{ts,tsx}',
     '!src/styles/**/*.ts',
     '!src/types/**/*.d.ts',
     '!src/services/firebase.ts'

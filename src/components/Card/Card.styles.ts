@@ -2,12 +2,18 @@ import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.article`
   ${({ theme }) => css`
-    width: 30rem;
     max-width: 100%;
 
     padding: ${theme.spacings.xsmall};
     box-shadow: 0 0 4px ${theme.colors.grey.lightest};
     border-radius: ${theme.border.radius};
+    a {
+      display: block;
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
 
     ${theme.breakpoints.desktop} {
       transition: box-shadow 0.3s ease-in-out;

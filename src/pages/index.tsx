@@ -1,5 +1,10 @@
-import Home from 'templates/Home'
+import Auth from 'templates/Auth'
+import FormSignIn from 'components/FormSignIn'
 
 export default function Index() {
-  return <Home />
+  return (
+    <Auth title="Sign In">
+      <FormSignIn />
+    </Auth>
+  )
 }

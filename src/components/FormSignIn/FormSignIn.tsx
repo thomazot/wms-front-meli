@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Router from 'next/router'
 
 import Button from 'components/Button'
 import TextField from 'components/TextField'
@@ -31,6 +32,8 @@ const FormSignIn = ({ onSubmit }: FormSignInProps) => {
     if (onSubmit) {
       onSubmit()
     }
+
+    Router.push('/home')
   }
 
   return (

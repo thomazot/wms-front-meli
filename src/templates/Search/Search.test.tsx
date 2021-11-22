@@ -1,6 +1,6 @@
 import { render, screen } from 'utils/test-utils'
 
-import Home from '.'
+import Search from '.'
 import MenuItems from 'components/Menu/Menu.mock'
 import ShowcaseItems from 'components/Showcase/Showcase.mock'
 
@@ -20,7 +20,7 @@ jest.mock('components/Showcase', () => ({
 
 describe('<Home />', () => {
   it('should render component', () => {
-    render(<Home menuItems={MenuItems} showcaseItems={ShowcaseItems} />)
+    render(<Search menuItems={MenuItems} showcaseItems={ShowcaseItems} />)
 
     expect(screen.getByTestId('Mock Logo')).toBeInTheDocument()
     expect(screen.getByTestId('Mock Showcase')).toBeInTheDocument()

@@ -35,7 +35,7 @@ const Card = ({
     <S.Wrapper data-testid={`card-${id}`}>
       <Link href={permalink} passHref>
         <a>
-          <Image src={thumbnail} width={500} height={500} title={title} />
+          <Image src={thumbnail} width={800} height={800} title={title} />
         </a>
       </Link>
       <S.Row>

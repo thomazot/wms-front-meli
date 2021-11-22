@@ -3,6 +3,8 @@ import userEvent from '@testing-library/user-event'
 
 import FormSignIn from '.'
 
+jest.mock('next/router', () => ({ push: jest.fn() }))
+
 describe('<FormSignIn />', () => {
   it('should render the form', () => {
     const { container } = render(<FormSignIn />)
